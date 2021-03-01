@@ -28,6 +28,7 @@
     <form:errors path="surname" cssStyle="color: red"/>
     <br><br>
     Salary <form:input path="salary"/>
+    <form:errors path="salary" cssStyle="color: red"/>
     <br><br>
     Department <form:select path="department">
     <form:options items="${employee.departmens}"/>
@@ -53,6 +54,10 @@
 <%--    EN <form:checkbox path="languages" value="English"/>--%>
 <%--    DE <form:checkbox path="languages" value="Deutch"/>--%>
 <%--    FR <form:checkbox path="languages" value="Francias"/>--%>
+
+    <br><br>
+    PhoneNumber <form:input path="phoneNumber"/>
+    <form:errors path="phoneNumber" cssStyle="color: red"/>
 
     <br><br>
     <input type="submit" value="OK">
