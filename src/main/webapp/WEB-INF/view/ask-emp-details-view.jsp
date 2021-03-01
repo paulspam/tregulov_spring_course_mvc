@@ -10,6 +10,9 @@
 <html>
 <head>
     <title>Ask details</title>
+<%--    <style>--%>
+<%--        error {color: red}--%>
+<%--    </style>--%>
 </head>
 <body>
 
@@ -19,8 +22,10 @@
 
 <form:form  action="showDetails" modelAttribute="employee">
     Name <form:input path="name"/>
+    <form:errors path="name" cssStyle="color: red"/>
     <br><br>
     Surname <form:input path="surname"/>
+    <form:errors path="surname" cssStyle="color: red"/>
     <br><br>
     Salary <form:input path="salary"/>
     <br><br>
