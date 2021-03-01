@@ -60,6 +60,10 @@
     <form:errors path="phoneNumber" cssStyle="color: red"/>
 
     <br><br>
+    E-mail <form:input path="email"/>
+    <form:errors path="email" cssStyle="color: red"/>
+
+    <br><br>
     <input type="submit" value="OK">
 </form:form>
 
